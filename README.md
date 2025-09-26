@@ -26,6 +26,7 @@ uv sync
 
 # 4) Run the app
 uv run blackmagic-transport.py
+```
 
 ## Notes
 - HyperDeck devices must have their API enabled and be reachable on your network.  
@@ -33,5 +34,6 @@ uv run blackmagic-transport.py
 
 ## License
 MIT License – feel free to modify and use.
+
 
 
