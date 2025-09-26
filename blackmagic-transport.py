@@ -13,8 +13,8 @@ TIMEOUT = 2.5
 
 # Deck presets
 DECK_CHOICES = {
-    "Deck 1 (xxx.xxx.xxx.xxx)": "http://xxx.xxx.xxx.xxx/control/api/v1/",
-    "Deck 2 (xxx.xxx.xxx.xxx)": "http://xxx.xxx.xxx.xxx/control/api/v1/",
+    "Deck 1 (x.x.x.x)": "http://x.x.x.x/control/api/v1/",
+    "Deck 2 (x.x.x.x)": "http://x.x.x.x/control/api/v1/",
     "Custom": "",  # enabled via text field
 }
 
