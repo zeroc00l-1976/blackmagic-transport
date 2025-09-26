@@ -13,47 +13,18 @@ This tool provides a GUI with familiar transport controls (play, stop, record, e
 - Python 3.11 (or newer)  
 - [uv](https://github.com/astral-sh/uv) (fast Python package/dependency manager)  
 
-Install **uv** using pip:
-```bash
-pip install uv
-```
+# 1) Install uv if you do not have it yet
+pip install uv    # or: curl -LsSf https://astral.sh/uv/install.sh | sh
 
-Verify installation:
-```bash
-uv --version
-```
-
-## Setup
-Clone this repository:
-```bash
+# 2) Clone and enter the repo
 git clone https://github.com/<your-username>/blackmagic-transport.git
 cd blackmagic-transport
-```
 
-Create a virtual environment with uv:
-```bash
-uv venv
-```
+# 3) Create the venv and install deps from pyproject.toml and uv.lock
+uv sync
 
-Activate the environment:
-```bash
-# macOS/Linux
-source .venv/bin/activate
-
-# Windows PowerShell
-.venv\Scripts\activate
-```
-
-Install dependencies:
-```bash
-uv pip install requests certifi
-```
-
-## Usage
-Run the app:
-```bash
+# 4) Run the app
 uv run blackmagic-transport.py
-```
 
 ## Notes
 - HyperDeck devices must have their API enabled and be reachable on your network.  
@@ -61,3 +32,4 @@ uv run blackmagic-transport.py
 
 ## License
 MIT License – feel free to modify and use.
+
