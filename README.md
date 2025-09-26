@@ -13,6 +13,7 @@ This tool provides a GUI with familiar transport controls (play, stop, record, e
 - Python 3.11 (or newer)  
 - [uv](https://github.com/astral-sh/uv) (fast Python package/dependency manager)  
 
+```bash
 # 1) Install uv if you do not have it yet
 pip install uv    # or: curl -LsSf https://astral.sh/uv/install.sh | sh
 
@@ -32,4 +33,5 @@ uv run blackmagic-transport.py
 
 ## License
 MIT License – feel free to modify and use.
+
 
