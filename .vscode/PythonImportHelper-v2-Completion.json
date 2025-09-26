@@ -1,0 +1,492 @@
+[
+    {
+        "label": "runpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "runpy",
+        "description": "runpy",
+        "detail": "runpy",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "os,",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os.",
+        "description": "os.",
+        "detail": "os.",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "tkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "ttk",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "messagebox",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "ttk",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "messagebox",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "urljoin",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "urljoin",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "lru_cache",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "certifi",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "certifi",
+        "description": "certifi",
+        "detail": "certifi",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"blackmagic-transport\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"blackmagic-transport\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"blackmagic-transport\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"blackmagic-transport\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"blackmagic-transport\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "HyperDeckClient",
+        "kind": 6,
+        "importPath": "blackmagic-transport",
+        "description": "blackmagic-transport",
+        "peekOfCode": "class HyperDeckClient:\n    def __init__(self, base_url: str):\n        self.base_url = base_url.rstrip(\"/\") + \"/\"\n    def _get(self, path: str):\n        url = urljoin(self.base_url, path.lstrip(\"/\"))\n        r = requests.get(url, timeout=TIMEOUT)\n        r.raise_for_status()\n        return r.json()\n    def _post(self, path: str, payload: dict | None = None):\n        url = urljoin(self.base_url, path.lstrip(\"/\"))",
+        "detail": "blackmagic-transport",
+        "documentation": {}
+    },
+    {
+        "label": "HyperDeckGUI",
+        "kind": 6,
+        "importPath": "blackmagic-transport",
+        "description": "blackmagic-transport",
+        "peekOfCode": "class HyperDeckGUI(ttk.Frame):\n    def __init__(self, master, base_url: str, transport_idx: int = 0):\n        super().__init__(master, padding=12)\n        self.client = HyperDeckClient(base_url)\n        self.transport_idx = transport_idx\n        self._last_transport_json = {}\n        self._last_custom_url = \"\"  # remember last custom entry\n        self._build_ui(master)\n        self.after(POLL_INTERVAL_MS, self.refresh_state)\n    def _build_ui(self, master):",
+        "detail": "blackmagic-transport",
+        "documentation": {}
+    },
+    {
+        "label": "normalize_base_url",
+        "kind": 2,
+        "importPath": "blackmagic-transport",
+        "description": "blackmagic-transport",
+        "peekOfCode": "def normalize_base_url(s: str) -> str:\n    s = (s or \"\").strip()\n    if not s:\n        return \"\"\n    # If user typed only IP or hostname, add http://\n    if not re.match(r\"^https?://\", s, re.I):\n        s = \"http://\" + s\n    # If user provided just host, host:port, or host with slash, ensure path\n    # Strip any trailing spaces\n    s = s.strip()",
+        "detail": "blackmagic-transport",
+        "documentation": {}
+    },
+    {
+        "label": "derive_state",
+        "kind": 2,
+        "importPath": "blackmagic-transport",
+        "description": "blackmagic-transport",
+        "peekOfCode": "def derive_state(tr: dict) -> str:\n    for k in [\"status\", \"state\", \"transport\", \"transportState\", \"transportMode\", \"mode\", \"playbackStatus\"]:\n        v = tr.get(k)\n        if isinstance(v, str) and v.strip():\n            return v\n    truthy = lambda x: str(x).lower() in {\"1\", \"true\", \"yes\", \"on\"}\n    if truthy(tr.get(\"isRecording\")) or truthy(tr.get(\"recording\")):\n        return \"Recording\"\n    if truthy(tr.get(\"isPlaying\")) or truthy(tr.get(\"playing\")):\n        return \"Playing\"",
+        "detail": "blackmagic-transport",
+        "documentation": {}
+    },
+    {
+        "label": "derive_timecode",
+        "kind": 2,
+        "importPath": "blackmagic-transport",
+        "description": "blackmagic-transport",
+        "peekOfCode": "def derive_timecode(tr: dict) -> str:\n    for k in [\"position\", \"timecode\", \"time\", \"tc\", \"currentTimecode\"]:\n        v = tr.get(k)\n        if isinstance(v, str) and v.strip():\n            return v\n        if isinstance(v, (int, float)):\n            s = int(v)\n            h, rem = divmod(s, 3600)\n            m, s = divmod(rem, 60)\n            return f\"{h:02d}:{m:02d}:{s:02d}:00\"",
+        "detail": "blackmagic-transport",
+        "documentation": {}
+    },
+    {
+        "label": "derive_active_clip_name",
+        "kind": 2,
+        "importPath": "blackmagic-transport",
+        "description": "blackmagic-transport",
+        "peekOfCode": "def derive_active_clip_name(clip_info: dict | None) -> str:\n    if not clip_info:\n        return \"—\"\n    for k in [\"name\", \"clipName\", \"title\", \"filename\"]:\n        v = clip_info.get(k)\n        if isinstance(v, str) and v.strip():\n            return v\n    return \"unnamed\"\nclass HyperDeckGUI(ttk.Frame):\n    def __init__(self, master, base_url: str, transport_idx: int = 0):",
+        "detail": "blackmagic-transport",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "blackmagic-transport",
+        "description": "blackmagic-transport",
+        "peekOfCode": "def main():\n    default_base = DECK_CHOICES[\"DDR 28 (172.16.17.52)\"]\n    root = tk.Tk()\n    style = ttk.Style()\n    try:\n        style.theme_use(\"clam\")\n    except Exception:\n        pass\n    app = HyperDeckGUI(root, base_url=default_base, transport_idx=0)\n    root.mainloop()",
+        "detail": "blackmagic-transport",
+        "documentation": {}
+    },
+    {
+        "label": "POLL_INTERVAL_MS",
+        "kind": 5,
+        "importPath": "blackmagic-transport",
+        "description": "blackmagic-transport",
+        "peekOfCode": "POLL_INTERVAL_MS = 1000\nTIMEOUT = 2.5\n# Deck presets\nDECK_CHOICES = {\n    \"DDR 27 (172.16.17.51)\": \"http://172.16.17.51/control/api/v1/\",\n    \"DDR 28 (172.16.17.52)\": \"http://172.16.17.52/control/api/v1/\",\n    \"Custom\": \"\",  # enabled via text field\n}\n# Accepts ip, host, with or without scheme, with or without trailing path\n# Returns normalized base url like http://x.x.x.x/control/api/v1/",
+        "detail": "blackmagic-transport",
+        "documentation": {}
+    },
+    {
+        "label": "TIMEOUT",
+        "kind": 5,
+        "importPath": "blackmagic-transport",
+        "description": "blackmagic-transport",
+        "peekOfCode": "TIMEOUT = 2.5\n# Deck presets\nDECK_CHOICES = {\n    \"DDR 27 (172.16.17.51)\": \"http://172.16.17.51/control/api/v1/\",\n    \"DDR 28 (172.16.17.52)\": \"http://172.16.17.52/control/api/v1/\",\n    \"Custom\": \"\",  # enabled via text field\n}\n# Accepts ip, host, with or without scheme, with or without trailing path\n# Returns normalized base url like http://x.x.x.x/control/api/v1/\ndef normalize_base_url(s: str) -> str:",
+        "detail": "blackmagic-transport",
+        "documentation": {}
+    },
+    {
+        "label": "DECK_CHOICES",
+        "kind": 5,
+        "importPath": "blackmagic-transport",
+        "description": "blackmagic-transport",
+        "peekOfCode": "DECK_CHOICES = {\n    \"DDR 27 (172.16.17.51)\": \"http://172.16.17.51/control/api/v1/\",\n    \"DDR 28 (172.16.17.52)\": \"http://172.16.17.52/control/api/v1/\",\n    \"Custom\": \"\",  # enabled via text field\n}\n# Accepts ip, host, with or without scheme, with or without trailing path\n# Returns normalized base url like http://x.x.x.x/control/api/v1/\ndef normalize_base_url(s: str) -> str:\n    s = (s or \"\").strip()\n    if not s:",
+        "detail": "blackmagic-transport",
+        "documentation": {}
+    },
+    {
+        "label": "Config",
+        "kind": 6,
+        "importPath": "v2",
+        "description": "v2",
+        "peekOfCode": "class Config:\n    \"\"\"Configuration constants and settings.\"\"\"\n    POLL_INTERVAL_MS = 1000\n    POLL_INTERVAL_MS_DISCONNECTED = 5000\n    TIMEOUT = 2.5\n    MAX_RETRIES = 3\n    DEFAULT_TRANSPORT_IDX = 0\n    WINDOW_MIN_WIDTH = 680\n    WINDOW_MIN_HEIGHT = 320\n    SETTINGS_FILE = Path.home() / '.hyperdeck_settings.json'",
+        "detail": "v2",
+        "documentation": {}
+    },
+    {
+        "label": "SettingsManager",
+        "kind": 6,
+        "importPath": "v2",
+        "description": "v2",
+        "peekOfCode": "class SettingsManager:\n    \"\"\"Manages application settings persistence.\"\"\"\n    def __init__(self, settings_file: Path = Config.SETTINGS_FILE):\n        self.settings_file = settings_file\n        self._settings = self._load_settings()\n    def _load_settings(self) -> Dict[str, Any]:\n        \"\"\"Load settings from file.\"\"\"\n        try:\n            if self.settings_file.exists():\n                with open(self.settings_file, 'r') as f:",
+        "detail": "v2",
+        "documentation": {}
+    },
+    {
+        "label": "ConnectionManager",
+        "kind": 6,
+        "importPath": "v2",
+        "description": "v2",
+        "peekOfCode": "class ConnectionManager:\n    \"\"\"Manages connection state and validation.\"\"\"\n    def __init__(self, client: 'HyperDeckClient'):\n        self.client = client\n        self.is_connected = False\n        self.last_connection_check = 0\n        self.connection_check_interval = 5.0  # seconds\n    def check_connection(self) -> bool:\n        \"\"\"Check if connection is valid, with caching.\"\"\"\n        current_time = time.time()",
+        "detail": "v2",
+        "documentation": {}
+    },
+    {
+        "label": "HyperDeckClient",
+        "kind": 6,
+        "importPath": "v2",
+        "description": "v2",
+        "peekOfCode": "class HyperDeckClient:\n    \"\"\"Enhanced HyperDeck API client with better error handling and features.\"\"\"\n    def __init__(self, base_url: str, timeout: float = Config.TIMEOUT):\n        self.base_url = base_url.rstrip(\"/\") + \"/\"\n        self.timeout = timeout\n        self.session = requests.Session()\n        self.session.headers.update({\n            'User-Agent': 'HyperDeck-Transport/2.0',\n            'Accept': 'application/json'\n        })",
+        "detail": "v2",
+        "documentation": {}
+    },
+    {
+        "label": "HyperDeckGUI",
+        "kind": 6,
+        "importPath": "v2",
+        "description": "v2",
+        "peekOfCode": "class HyperDeckGUI(ttk.Frame):\n    \"\"\"Enhanced HyperDeck GUI with better organization and features.\"\"\"\n    def __init__(self, master: tk.Tk, base_url: str, transport_idx: int = 0):\n        super().__init__(master, padding=12)\n        # Initialize managers\n        self.settings = SettingsManager()\n        self.client = HyperDeckClient(base_url)\n        self.connection_manager = ConnectionManager(self.client)\n        # State variables\n        self.transport_idx = transport_idx",
+        "detail": "v2",
+        "documentation": {}
+    },
+    {
+        "label": "normalize_base_url",
+        "kind": 2,
+        "importPath": "v2",
+        "description": "v2",
+        "peekOfCode": "def normalize_base_url(s: str) -> str:\n    \"\"\"\n    Normalize a base URL for HyperDeck API.\n    Args:\n        s: Input URL string (IP, hostname, or full URL)\n    Returns:\n        Normalized URL ending with /control/api/v1/\n    \"\"\"\n    s = (s or \"\").strip()\n    if not s:",
+        "detail": "v2",
+        "documentation": {}
+    },
+    {
+        "label": "derive_state",
+        "kind": 2,
+        "importPath": "v2",
+        "description": "v2",
+        "peekOfCode": "def derive_state(transport_data: Dict[str, Any]) -> str:\n    \"\"\"Derive transport state from API response.\"\"\"\n    # Check common state fields\n    for key in [\"status\", \"state\", \"transport\", \"transportState\", \"transportMode\", \"mode\", \"playbackStatus\"]:\n        value = transport_data.get(key)\n        if isinstance(value, str) and value.strip():\n            return value\n    # Check boolean flags\n    truthy = lambda x: str(x).lower() in {\"1\", \"true\", \"yes\", \"on\"}\n    if truthy(transport_data.get(\"isRecording\")) or truthy(transport_data.get(\"recording\")):",
+        "detail": "v2",
+        "documentation": {}
+    },
+    {
+        "label": "derive_timecode",
+        "kind": 2,
+        "importPath": "v2",
+        "description": "v2",
+        "peekOfCode": "def derive_timecode(transport_data: Dict[str, Any]) -> str:\n    \"\"\"Derive timecode from API response.\"\"\"\n    # Check common timecode fields\n    for key in [\"position\", \"timecode\", \"time\", \"tc\", \"currentTimecode\"]:\n        value = transport_data.get(key)\n        if isinstance(value, str) and value.strip():\n            return value\n        if isinstance(value, (int, float)):\n            seconds = int(value)\n            hours, remainder = divmod(seconds, 3600)",
+        "detail": "v2",
+        "documentation": {}
+    },
+    {
+        "label": "derive_active_clip_name",
+        "kind": 2,
+        "importPath": "v2",
+        "description": "v2",
+        "peekOfCode": "def derive_active_clip_name(clip_info: Optional[Dict[str, Any]]) -> str:\n    \"\"\"Derive clip name from clip information.\"\"\"\n    if not clip_info:\n        return \"—\"\n    for key in [\"name\", \"clipName\", \"title\", \"filename\"]:\n        value = clip_info.get(key)\n        if isinstance(value, str) and value.strip():\n            return value\n    return \"Unnamed\"\nclass HyperDeckGUI(ttk.Frame):",
+        "detail": "v2",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "v2",
+        "description": "v2",
+        "peekOfCode": "def main() -> None:\n    \"\"\"Main application entry point.\"\"\"\n    # Set up root window\n    root = tk.Tk()\n    # Configure style\n    style = ttk.Style()\n    try:\n        style.theme_use(\"clam\")\n    except Exception:\n        pass",
+        "detail": "v2",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "v2",
+        "description": "v2",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nclass Config:\n    \"\"\"Configuration constants and settings.\"\"\"\n    POLL_INTERVAL_MS = 1000\n    POLL_INTERVAL_MS_DISCONNECTED = 5000\n    TIMEOUT = 2.5\n    MAX_RETRIES = 3\n    DEFAULT_TRANSPORT_IDX = 0\n    WINDOW_MIN_WIDTH = 680\n    WINDOW_MIN_HEIGHT = 320",
+        "detail": "v2",
+        "documentation": {}
+    }
+]
