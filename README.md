@@ -10,8 +10,34 @@ This tool provides a GUI with familiar transport controls (play, stop, record, e
 - Lightweight GUI built with Tkinter, no special hardware required  
 
 ## Prerequisites
-- Python 3.11 (or newer)  
+- Python 3.11 or newer (project tested with Python 3.13)  
 - [uv](https://github.com/astral-sh/uv) (fast Python package/dependency manager)  
+
+### macOS Tk note
+On macOS, Homebrew’s `python@3.x` may not include Tkinter by default. If you see  
+`ModuleNotFoundError: No module named '_tkinter'`, do one of the following:
+
+1. **Install Python from [python.org](https://www.python.org/downloads/macos/)** – these builds include Tk by default.  
+2. Or install Python via **pyenv** and compile with Homebrew’s `tcl-tk`:  
+   ```bash
+   brew install pyenv tcl-tk
+   pyenv install 3.13.7
+   uv python pin /Users/<you>/.pyenv/versions/3.13.7/bin/python3.13
+   uv sync
+   ```
+3. Then re-run your project with uv.
+
+### Windows Tk note
+On Windows, the official Python.org installer includes Tkinter by default.  
+If you encounter a `_tkinter` error, make sure you installed Python with the **"tcl/tk and IDLE"** option enabled (this is selected by default).  
+If using a custom distribution (e.g., Miniconda), you may need to install Tk manually:
+```bash
+conda install tk
+```
+
+---
+
+## Quick Start
 
 ```bash
 # 1) Install uv if you do not have it yet
@@ -34,6 +60,3 @@ uv run blackmagic-transport.py
 
 ## License
 MIT License – feel free to modify and use.
-
-
-
