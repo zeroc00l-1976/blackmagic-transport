@@ -13,8 +13,8 @@ TIMEOUT = 2.5
 
 # Deck presets
 DECK_CHOICES = {
-    "Deck 1 (x.x.x.x)": "http://x.x.x.x/control/api/v1/",
-    "Deck 2 (x.x.x.x)": "http://x.x.x.x/control/api/v1/",
+    "DDR 27 (172.16.17.51)": "http://172.16.17.51/control/api/v1/",
+    "DDR 28 (172.16.17.52)": "http://172.16.17.52/control/api/v1/",
     "Custom": "",  # enabled via text field
 }
 
