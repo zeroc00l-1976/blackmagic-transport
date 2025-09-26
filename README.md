@@ -14,18 +14,18 @@ This tool provides a GUI with familiar transport controls (play, stop, record, e
 - [uv](https://github.com/astral-sh/uv) (fast Python package/dependency manager)  
 
 ### macOS Tk note
-On macOS, Homebrew’s `python@3.x` may not include Tkinter by default. If you see  
-`ModuleNotFoundError: No module named '_tkinter'`, do one of the following:
+On macOS, Homebrew’s `python@3.x` may not include Tkinter by default.  
+If you see:  
+`ModuleNotFoundError: No module named '_tkinter'`  
 
-1. **Install Python from [python.org](https://www.python.org/downloads/macos/)** – these builds include Tk by default.  
-2. Or install Python via **pyenv** and compile with Homebrew’s `tcl-tk`:  
+The easiest solution is:  
+1. Install Python from [python.org](https://www.python.org/downloads/macos/). These builds include Tk support by default.  
+2. Pin that interpreter in your project:  
    ```bash
-   brew install pyenv tcl-tk
-   pyenv install 3.13.7
-   uv python pin /Users/<you>/.pyenv/versions/3.13.7/bin/python3.13
+   uv python pin /Library/Frameworks/Python.framework/Versions/3.13/bin/python3.13
    uv sync
    ```
-3. Then re-run your project with uv.
+3. Run your project again with uv.  
 
 ### Windows Tk note
 On Windows, the official Python.org installer includes Tkinter by default.  
